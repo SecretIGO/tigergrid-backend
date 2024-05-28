@@ -24,8 +24,6 @@ public class Question {
     private List<String> newDropdownChoices;
     private int page;
 
-
-
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "form_id")
     @JsonBackReference
