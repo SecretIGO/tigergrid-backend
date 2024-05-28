@@ -18,10 +18,13 @@ public class Question {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
+
     private String newQuestion;
     private String newInputType;
+
     @ElementCollection
     private List<String> newDropdownChoices;
+
     private int page;
 
     @ManyToOne(fetch = FetchType.LAZY)
